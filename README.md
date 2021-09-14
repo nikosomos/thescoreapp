@@ -54,4 +54,16 @@ We will evaluate you on your ability to solve the problem defined in the require
 If you have any questions regarding requirements, do not hesitate to email your contact at theScore for clarification.
 
 ### Installation and running this solution
+Option 1 - Docker Image
+1. docker pull nikosomos4/thescoreapp:latest
+2. docker run -d -p 5000:80 thescoreapp
+
+Option 2 - Build from repo
+1. git clone https://github.com/nikosomos/thescoreapp.git
+2. dotnet build -c Release
+3. dotnet run -c Release
+
+### Notes
+* Backend looks like a good opportunity to implement graphQL. This would help simplify the filtering and sorting on the backend. My comfort level with graphQL was not enough to implement this at this time.
+* Performance of MUI datatables package is not great, seems to re-render when nothing has changed. Finding a different library to display the data may be beneficial
 

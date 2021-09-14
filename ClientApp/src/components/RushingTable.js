@@ -38,20 +38,17 @@ export default function RushingTable() {
       .finally(() => setIsLoaded(true));
   };
 
-  const getCSV = (newSort, newSearch, newPage, newRowsPerPage) => {
-    getRushingStatsCSV(
-      newSort,
-      searchToFilter(newSearch),
-      newPage,
-      newRowsPerPage
-    ).then((res) => {
-      const url = window.URL.createObjectURL(new Blob([res.data]));
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", "rushingStats.csv"); //or any other extension
-      document.body.appendChild(link);
-      link.click();
-    });
+  const getCSV = () => {
+    getRushingStatsCSV(sort, searchToFilter(search), page, rowsPerPage).then(
+      (res) => {
+        const url = window.URL.createObjectURL(new Blob([res.data]));
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "rushingStats.csv"); //or any other extension
+        document.body.appendChild(link);
+        link.click();
+      }
+    );
   };
 
   const debounceGetRows = useCallback(
