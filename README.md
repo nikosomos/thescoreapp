@@ -55,12 +55,12 @@ If you have any questions regarding requirements, do not hesitate to email your 
 
 ### Installation and running this solution
 Option 1 - Docker Image
-1. docker pull nikosomos4/thescoreapp:latest
-2. docker run -d -p 5000:80 thescoreapp
+1. docker run -d -p 80:5000 nikosomos4/thescoreapp
 
-Option 2 - Build from repo
+Option 2 - Build from repo (Requires .NET Core 5 and NodeJS to be installed)
 1. git clone https://github.com/nikosomos/thescoreapp.git
-2. dotnet build -c Release
+2. dotnet publish -c Release
+    * If there are errors getting dependancies, you may need to run dotnet nuget add source https://api.nuget.org/v3/index.json --name nuget.org
 3. dotnet run -c Release
 
 ### Notes
