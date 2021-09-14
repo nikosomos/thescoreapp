@@ -44,7 +44,7 @@ export const RushingTableColumns = [
   {
     name: "attempts",
     label: "Att",
-    toolTip: "Attempts",
+    toolTip: "Rushing Attempts",
     options: {
       sort: false,
       customHeadLabelRender,
@@ -53,7 +53,7 @@ export const RushingTableColumns = [
   {
     name: "attemptsPerGame",
     label: "Att/G",
-    toolTip: "Attempts Per Game",
+    toolTip: "Rushing Attempts Per Game Average",
     options: {
       sort: false,
       customHeadLabelRender,
@@ -62,7 +62,7 @@ export const RushingTableColumns = [
   {
     name: "yards",
     label: "Yds",
-    toolTip: "Yards",
+    toolTip: "Total Rushing Yards",
     options: {
       sort: true,
       customHeadLabelRender,
@@ -71,7 +71,7 @@ export const RushingTableColumns = [
   {
     name: "yardsPerAttempt",
     label: "Yds/Att",
-    toolTip: "Yards Per Attempt",
+    toolTip: "Rushing Average Yards Per Attempt",
     options: {
       sort: false,
       customHeadLabelRender,
@@ -80,7 +80,7 @@ export const RushingTableColumns = [
   {
     name: "yardsPerGame",
     label: "Yds/G",
-    toolTip: "Yards Per Game",
+    toolTip: "Rushing Yards Per Game",
     options: {
       sort: false,
       customHeadLabelRender,
@@ -89,7 +89,7 @@ export const RushingTableColumns = [
   {
     name: "touchdowns",
     label: "TD",
-    toolTip: "Touchdowns",
+    toolTip: "Total Rushing Touchdowns",
     options: {
       sort: true,
       customHeadLabelRender,
@@ -98,7 +98,7 @@ export const RushingTableColumns = [
   {
     name: "longest",
     label: "Lng",
-    toolTip: "Longest",
+    toolTip: "Longest Rush",
     options: {
       sort: true,
       customHeadLabelRender,
@@ -107,7 +107,7 @@ export const RushingTableColumns = [
   {
     name: "firstDowns",
     label: "1st",
-    toolTip: "First Downs",
+    toolTip: "Rushing First Downs",
     options: {
       sort: false,
       customHeadLabelRender,
@@ -116,7 +116,7 @@ export const RushingTableColumns = [
   {
     name: "firstDownPercent",
     label: "1st%",
-    toolTip: "First Down Percent",
+    toolTip: "Rushing First Down Percentage",
     options: {
       sort: false,
       customHeadLabelRender,
@@ -125,7 +125,7 @@ export const RushingTableColumns = [
   {
     name: "twentyPlusYardCount",
     label: "20+",
-    toolTip: "Twenty Plus Yard Count",
+    toolTip: "Rushing 20+ Yards Each",
     options: {
       sort: false,
       customHeadLabelRender,
@@ -134,7 +134,7 @@ export const RushingTableColumns = [
   {
     name: "fortyPlusYardCount",
     label: "40+",
-    toolTip: "Forty Plus Yard Count",
+    toolTip: "Rushing 40+ Yards Each",
     options: {
       sort: false,
       customHeadLabelRender,
@@ -143,7 +143,7 @@ export const RushingTableColumns = [
   {
     name: "fumbles",
     label: "Fum",
-    toolTip: "Fumbles",
+    toolTip: "Rushing Fumbles",
     options: {
       sort: false,
       customHeadLabelRender,

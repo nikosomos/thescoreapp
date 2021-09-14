@@ -12,6 +12,7 @@ namespace thescoreapp.Models
         public IEnumerable<SortDto> Sort { get; set; }
         public IEnumerable<FilterDto> Filter { get; set; }
 
+        /// <summary> Given a IQueryable, this method returns a IQueryable with filters and sorts applied </summary> 
         public IQueryable<T> ApplyRequest<T>(IQueryable<T> queryable)
         {
             var properties = typeof(T).GetProperties().ToList();
@@ -54,6 +55,7 @@ namespace thescoreapp.Models
         public int Page { get; set; }
         public int RowsPerPage { get; set; }
 
+        /// <summary>Applys the filter and sort from the super class, then gets the number of rows required after skipping based on page number </summary>
         public new TableResponseDto<T> ApplyRequest<T>(IQueryable<T> queryable)
         {
             queryable = base.ApplyRequest<T>(queryable);

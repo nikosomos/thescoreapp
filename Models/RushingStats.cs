@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 
 namespace thescoreapp.Models
 {
+    /// Entity class that holds a row of rushing statistics read from json file
     public class RushingStats
     {
         [JsonProperty("Player")]
